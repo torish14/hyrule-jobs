@@ -17,11 +17,15 @@ export default defineComponent({
   data() {
     return {
       name: 'link',
+      age: 25 as number | string,
     }
   },
   methods: {
     changeName(name: string) {
       this.name = name
+    },
+    changeAge(age: number) {
+      this.age = age
     },
   },
 })
