@@ -1,0 +1,8 @@
+{
+  "single": true,
+  "semi": false,
+  "trailingComma": "all",
+  "printer": 70,
+  "tabWidth": 2,
+  "useTabs": false
+}
