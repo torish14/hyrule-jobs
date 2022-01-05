@@ -9,24 +9,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-  },
+  components: {},
   data() {
     return {
-      name: 'link'
+      name: 'link',
     }
   },
   methods: {
     changeName(name: string) {
       this.name = name
-    }
-  }
-});
+    },
+  },
+})
 </script>
 
-<style>
-</style>
+<style></style>
