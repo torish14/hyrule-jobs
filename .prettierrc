@@ -1,5 +1,5 @@
 {
-  "single": true,
+  "singleQuote": true,
   "semi": false,
   "trailingComma": "all",
   "printer": 70,
