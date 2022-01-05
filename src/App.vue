@@ -2,9 +2,10 @@
   <div class="app">
     <h1>Hello Vue!</h1>
     <p>
-      {{ name }}
+      {{ name }} - {{ age }}
     </p>
     <button @click="changeName('zelda')">change name</button>
+    <button @click="changeAge(20)">change age</button>
   </div>
 </template>
 
