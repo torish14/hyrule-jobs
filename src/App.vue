@@ -22,6 +22,7 @@ export default defineComponent({
       { title: 'teacher', location: 'united states', salary: 40000, id: 4 },
       { title: 'engineer', location: 'united states', salary: 50000, id: 5 },
     ])
+
     return { jobs }
   },
 })
