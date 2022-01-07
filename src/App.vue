@@ -22,14 +22,45 @@ export default defineComponent({
   },
   setup() {
     const jobs = ref<Job[]>([
-      { title: 'farm worker', location: 'young america', salary: 10000, id: 1 },
-      { title: 'farmer', location: 'new zealand', salary: 20000, id: 2 },
-      { title: 'doctor', location: 'united states', salary: 30000, id: 3 },
-      { title: 'teacher', location: 'united states', salary: 40000, id: 4 },
-      { title: 'engineer', location: 'united states', salary: 50000, id: 5 },
+      {
+        title: 'farm worker',
+        location: 'young america',
+        salary: 10000,
+        id: 1,
+      },
+      {
+        title: 'farmer',
+        location: 'new zealand',
+        salary: 20000,
+        id: 2,
+      },
+      {
+        title: 'doctor',
+        location: 'united states',
+        salary: 30000,
+        id: 3,
+      },
+      {
+        title: 'teacher',
+        location: 'united states',
+        salary: 40000,
+        id: 4,
+      },
+      {
+        title: 'engineer',
+        location: 'united states',
+        salary: 50000,
+        id: 5,
+      },
     ])
 
-    return { jobs }
+    const order = ref<OrderTerm>('title')
+
+    const handleClick = (term: OrderTerm) => {
+      order.value = term
+    }
+
+    return { jobs, handleClick, order }
   },
 })
 </script>
