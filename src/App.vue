@@ -1,13 +1,19 @@
 <template>
   <div class="app">
-    <JobsList :jobs="jobs" />
+    <button @click="handleClick('title')">order by title</button>
+    <button @click="handleClick('location')">
+      order by location
+    </button>
+    <button @click="handleClick('salary')">order by salary</button>
+    <JobsList :jobs="jobs" :order="order" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import JobsList from './components/JobsList.vue'
-import Job from './types/job'
+import Job from './types/Job'
+import OrderTerm from './types/OrderTerm'
 
 export default defineComponent({
   name: 'App',
